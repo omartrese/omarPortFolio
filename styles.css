@@ -12,14 +12,122 @@ body
   margin: 0;
 }
 
-h1{font-size: 2em; font-family: 'Anton', sans-serif;}
-h2{font-size: 1.5em; font-family: 'Abel', sans-serif}
-p{font-size: 1.4em; font-family: 'Abel', sans-serif;}
-a{font-size: 1.25em; font-family: 'Exo 2', sans-serif;}
+h1{font-size: 5em; font-family: 'Anton', sans-serif; font-style: italic; 
+margin-bottom: 0;}
+
+section .container nav h1{font-size: 3em; margin: 0;}
+
+h2{font-size: 2em; font-family: 'Abel', sans-serif}
+
+section nav h2{
+  font-size: 2.75em;
+  font-style: italic;
+  margin-top: 0.2em;
+  margin-bottom: 1.5em;
+}
+p{font-size: 3em; font-family: 'Abel', sans-serif; font-weight: bolder;}
+
+section div p{font-size: 2.5em;}
+
+header a{border-style: none;}
+
+a{
+  font-size: 2em; 
+  font-family: 'Exo 2', sans-serif;
+  color: black; 
+  padding: 0.5em 0.5em;
+  text-decoration: none;
+  border-style: solid; 
+  border-radius: 3em;
+}
+
 ul{list-style: none; font-size: 1.25em; font-family: 'Exo 2', sans-serif;}
+
+img{width:32px; height: 32px;}
+
+/* -------------------------------------------------------------------------- */
 
 .container
 {
   max-width: 1400px;
   margin: auto;
+}
+
+header
+{
+  background-color: rgb(210, 165, 210);
+}
+
+header .container
+{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+header p
+{
+  margin: 0;
+  text-align: center;
+  padding: 20px 30px;
+}
+
+header nav
+{
+  display: none;
+}
+/*----------------------------INICIO------------------------------------*/
+section #hero
+{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  padding-top: 2.5em;
+  padding-bottom: 5em;
+  background-color:rgb(245, 203, 245);
+}
+a:hover
+{
+  animation-name: buttonUp;
+  animation-duration: 0.5s;
+  font-size: 2.3em;
+}
+/* -----------------------------SOBRE MI------------------------------- */
+section div p
+{
+  display: flex;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  background-color:rgb(245, 203, 245);
+  margin: 0;
+  padding-bottom: 0.5em; 
+}
+/*----------------------------HABILIDADES-------------------------------*/
+section .container 
+{
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(245, 203, 245);
+  margin: 0;
+}
+section .container ul
+{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0; 
+  padding-bottom: 1em;
+  padding-right: 2em;
+}
+@keyframes buttonUp
+{
+  from {font-size: 2em}
+  to {font-size: 2.3em}
+}
+
+@media (min-width: 720px)
+{
+
 }
