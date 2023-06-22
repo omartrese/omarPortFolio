@@ -109,6 +109,7 @@ section .container
 {
   display: flex;
   flex-direction: column;
+  text-align: center;
   background-color: rgb(245, 203, 245);
   margin: 0;
 }
