@@ -5,6 +5,7 @@
 *
 {
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 body
@@ -15,7 +16,7 @@ body
 h1{font-size: 5em; font-family: 'Anton', sans-serif; font-style: italic; 
 margin-bottom: 0;}
 
-section .container nav h1{font-size: 3em; margin: 0;}
+section #skills nav h1{font-size: 3em; margin: 0;}
 
 h2{font-size: 2em; font-family: 'Abel', sans-serif}
 
@@ -84,10 +85,10 @@ section #hero
   flex-direction: column;
   text-align: center;
   padding-top: 2.5em;
-  padding-bottom: 5em;
+  padding-bottom: 8em;
   background-color:rgb(245, 203, 245);
 }
-a:hover
+section #hero nav a:hover
 {
   animation-name: buttonUp;
   animation-duration: 0.5s;
@@ -128,7 +129,73 @@ section .container ul
   to {font-size: 2.3em}
 }
 
-@media (min-width: 720px)
+@media (min-width: 720px) /* DESKTOP STYLE */
 {
+  /* ---------------CABECERA o HEADER----------------------- */
+  header .container
+  {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+  header p
+  {
+    margin: 0;
+    text-align: start;
+    padding: 20px 30px;
+  }
+  header nav
+  {
+    display: flex;
+  }
+  header nav a:hover
+  {
+    font-weight: bolder;
+  }
 
+  /* ------------------INICIO------------------------- */
+  h1{font-size: 7em; font-family: 'Anton', sans-serif; font-style: italic;}
+  section nav h2
+  {
+    font-size: 3.5em;
+    font-style: italic;
+    margin-top: 0.2em;
+    margin-bottom: 1.5em;
+  }
+  section #hero
+  {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding-top: 3em;
+    padding-bottom: 8em;
+    background-color:rgb(245, 203, 245);
+  }
+  
+
+  /* -----------------------------SOBRE MI------------------------------- */
+  section div p{font-size: 3.5em; padding: 0em 5em; text-align: center; align-items: center; padding-bottom: 3em;} 
+
+  /*----------------------------HABILIDADES-------------------------------*/
+  section #skills nav h1{font-size: 5em; margin: 0;}
+  ul{list-style: none; font-size: 3.5em; font-family: 'Exo 2', sans-serif;}
+  section
+  {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: rgb(245, 203, 245);
+    margin: 0;
+  }
+  section #skills ul
+  {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0; 
+  }
 }
